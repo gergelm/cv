@@ -1,0 +1,129 @@
+%cv.tex
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage[english]{babel}
+\moderncvcolor{cerulean}
+\moderncvstyle[]{contemporary}
+\usepackage[hmargin=0.5in,vmargin=10pt]{geometry}
+
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\name{Marek}{Gergel}
+%\title{Résumé title}
+\born{26 August 1999}
+\address{Trnava (SK)}{}{}
+\phone[mobile]{+421~918~729~963}
+\email{marekgergels@gmail.com}
+\social[linkedin]{marekgergel}
+\social[github]{gergelm}
+%\homepage{www.homepage.com}
+%\extrainfo{additional information}
+\photo[64pt][1pt]{picture}      %'64pt' is the height the picture must be resized to, 2pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{}
+
+\begin{document}
+\makecvtitle
+
+
+Passionate technical and programming engineer with a strong interest in development of applications, embedded systems, and IoT. 
+I am driven by my curiosity and enthusiasm for exploring cutting-edge technologies and finding innovative solutions to complex problems. 
+With a background in software design, development, and testing, I bring a creative and analytical mindset to every project I undertake.
+
+
+\section[\faGraduationCap]{Education}
+\cventry{2019--2024}{Information technology}{University of Technology}{Brno (CZ)}{}{Unfinished bachelor's degree with interrupted studies during the pandemic (2020--2022).}
+\cventry{2015--2019}{Electrical engineer}{High school of industry}{Trnava (SK)}{}{Finished with maturity exam (Slovak, English, Informatics, Matematics, Electrical engineering).}
+
+
+\section[\faBriefcase]{Experience}
+\subsection{Vocational}
+\cventry{08/2023--present}{Test Automation Engineer}{Siemens Healthineers}{Bratislava (SK)}{Part-time remote}{
+Java, Selenium, Azure DevOps, Javascript, JUnit, Postman, IntelliJ IDEA\medskip\newline{}
+Responsible for development and maintenance of automated tests written in Java with custom testing framework for Polarion web application.
+Involved in development of browser script for generating code template from Azure DevOps for new tests, that reduces time needed for test creation.
+Improved speed of automated testing with API requests for test setup and teardown instead of using UI\@. 
+\medskip}
+\cventry{07/2021--09/2022}{Test Automation Engineer}{Accenture}{Bratislava (SK)}{Full-time hybrid}{
+Java, Selenium, Cucumber, GitLab, JIRA, JUnit, TestNG, SCRUM, Robot Framework, Postman, IntelliJ IDEA\medskip\newline{}
+Responsible for design, development and maintenance of automated tests written in Java (Selenium) and Cucumber for web application of an austrian insurance company.
+Applied continuous integration at GitLab with reports.
+In training during employment gained experience with API testing, CI/CD and Robot Framework.
+\medskip}
+\subsection{Miscellaneous}
+\cventry{10/2017--10/2018}{Mobile phone repairman and shop assistant}{FixServis}{Trnava (SK)}{Part-time onsite}{
+Responsible for repairing mobile phones and selling accessories.}
+
+
+\section[\faProjectDiagram]{Projects}
+\cventry{2019--present}{Electric longboard}{Longtime personal project}{}{}{
+C, C++, Java, Android, ESP32, ESP-IDF, Arduino\medskip\newline{}
+Electric motor driven board powered with batteries and controlled wirelessly.
+Core of the project are microcontrollers programmed in C/C++ using ESP-IDF framework and Arduino libraries. 
+Controllable with custom controller or phone Android application written in Java with more advanced options.
+Project development has started at high school, continued during university studies and is still ongoing.
+\medskip}
+\cventry{2020}{Script for project testing}{Personal project}{}{}{
+Bash, Make, Valgrid\medskip\newline{}
+Bash script to run automated project testing.
+Script consists of operations for program build, memory check for leaks and invalid memory operations, program output comparison with reference. 
+Testing can focus on selected parts based on user requirements.
+Made for university projects written in C/C++.}
+
+
+\section[\faLanguage]{Languages}
+\cvitemwithcomment{Slovak}{C2}{Native speaker.}
+\cvitemwithcomment{English}{B2}{}
+\cvitemwithcomment{German}{A2}{Learned during work at Accenture.}
+\cvitemwithcomment{Spanish}{A1}{Learning in free time.}
+
+
+\section[\faTools]{Techstack}
+\cvskilllegend*[1em]{}
+\cvskillhead[-0.1em]
+
+\cvskillentry*{Language:}{4}{Java}{4}{Testing, JavaFX and Android development.}
+\cvskillentry{}{3}{C/C++}{5}{Algorithms, networking, embedded systems.}
+\cvskillentry{}{3}{Bash (Shell)}{3}{Linux scripting, automation, testing.}
+\cvskillentry{}{3}{HTML/CSS}{3}{}
+\cvskillentry{}{2}{JavaScript/TypeScript}{2}{}
+\cvskillentry{}{2}{Python}{2}{}
+\cvskillentry{}{2}{\LaTeX/Markdown}{2}{Writing documentation, bachelor thesis, CV.}
+\cvskillentry{}{2}{C\#}{1}{}
+\cvskillentry{}{2}{PHP}{1}{}
+\cvskillentry{}{2}{SQL}{1}{}
+
+\cvskillentry*{FW/Tools:}{4}{Selenium}{3}{}
+\cvskillentry{}{4}{Cucumber}{2}{}
+\cvskillentry{}{2}{Postman}{1}{}
+
+
+\section[\faCertificate]{Certificates}
+\cvitem{§ 22 Electrician Certificate}{Certification of professional competence for independent work on electrical devices up to 1000 V, in accordance with Slovak Regulation 508/2009.}
+
+
+\section[\faStar]{Interests and hobbies}
+\cvlistitem{embedded systems, iot}
+\cvlistitem{linux server administration}
+\cvlistitem{computer networking}
+\cvlistitem{reverse engineering}
+\cvlistitem{snowboarding/skiing}
+\cvlistitem{hiking and working out}
+\cvlistitem{chess}
+
+\end{document}
