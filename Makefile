@@ -19,11 +19,16 @@ presentation: $(NAME)-presentation.pdf
 	latex $(basename $@)
 	latex $(basename $@)
 
+check:
+	lacheck $(NAME).tex
+	chktex -q $(NAME).tex
+	aspell -t -c $(NAME).tex
+
 vlna:
 	vlna -l $(NAME)*.tex
 
 clean:
-	rm -f *~ *.dvi *.log *.blg *.bbl *.toc *.aux *.out *.lof *.ptc *.nav *.snm *.fdb_latexmk *.fls *synctex.gz
+	rm -f *~ *.dvi *.log *.blg *.bbl *.toc *.aux *.out *.lof *.ptc *.nav *.snm *.fdb_latexmk *.fls *.synctex.gz *.bak
 
 clean-all: clean
 	rm -f $(NAME).pdf $(NAME)-presentation.pdf $(NAME).zip

@@ -22,7 +22,7 @@
 
 \usepackage[hmargin=0.5in,vmargin=10pt]{geometry}
 
-\ifxetexorluatex
+\ifxetexorluatex% XeLaTeX or LuaLaTeX
   \usepackage{fontspec}
   \usepackage{unicode-math}
   \defaultfontfeatures{Ligatures=TeX}
@@ -54,7 +54,7 @@
 %\quote{}
 
 \begin{document}
-\makecvtitle
+\makecvtitle% CV header
 
 
 Passionate technical and programming engineer with a strong interest in development of applications, embedded systems, and IoT. 
@@ -64,38 +64,38 @@ With a background in software design, development, and testing, I bring a creati
 
 \section[\faGraduationCap]{Education}
 \cventry{2019--2024}{Information technology}{University of Technology}{Brno (CZ)}{}{Unfinished bachelor's degree with interrupted studies during the pandemic (2020--2022).}
-\cventry{2015--2019}{Electrical engineer}{High school of industry}{Trnava (SK)}{}{Finished with maturity exam (Slovak, English, Informatics, Matematics, Electrical engineering).}
+\cventry{2015--2019}{Electrical engineer}{High school of industry}{Trnava (SK)}{}{Finished with maturity exam (Slovak, English, Informatics, Mathematics, Electrical engineering).}
 
 
 \section[\faBriefcase]{Experience}
 \subsection{Vocational}
-\cventry{08/2023--present}{Test Automation Engineer}{Siemens Healthineers}{Bratislava (SK)}{Part-time remote}{
-Java, Selenium, Azure DevOps, Javascript, JUnit, Postman, IntelliJ IDEA\medskip\newline{}
+\cventry{08/2023--present}{Test Automation Engineer}{Siemens Healthineers}{Bratislava (SK)}{Part-time remote}{%
+Java, Selenium, Azure DevOps, JavaScript, JUnit, Postman, IntelliJ IDEA\medskip\newline{}
 Responsible for development and maintenance of automated tests written in Java with custom testing framework for Polarion web application.
 Involved in development of browser script for generating code template from Azure DevOps for new tests, that reduces time needed for test creation.
 Improved speed of automated testing with API requests for test setup and teardown instead of using UI\@. 
 \medskip}
-\cventry{07/2021--09/2022}{Test Automation Engineer}{Accenture}{Bratislava (SK)}{Full-time hybrid}{
+\cventry{07/2021--09/2022}{Test Automation Engineer}{Accenture}{Bratislava (SK)}{Full-time hybrid}{%
 Java, Selenium, Cucumber, GitLab, JIRA, JUnit, TestNG, SCRUM, Robot Framework, Postman, IntelliJ IDEA\medskip\newline{}
-Responsible for design, development and maintenance of automated tests written in Java (Selenium) and Cucumber for web application of an austrian insurance company.
+Responsible for design, development and maintenance of automated tests written in Java (Selenium) and Cucumber for web application of an Austrian insurance company.
 Applied continuous integration at GitLab with reports.
 In training during employment gained experience with API testing, CI/CD and Robot Framework.
 \medskip}
 \subsection{Miscellaneous}
-\cventry{10/2017--10/2018}{Mobile phone repairman and shop assistant}{FixServis}{Trnava (SK)}{Part-time onsite}{
+\cventry{10/2017--10/2018}{Mobile phone repairman and shop assistant}{FixServis}{Trnava (SK)}{Part-time onsite}{%
 Responsible for repairing mobile phones and selling accessories.}
 
 
 \section[\faProjectDiagram]{Projects}
-\cventry{2019--present}{Electric longboard}{Longtime personal project}{}{}{
+\cventry{2019--present}{Electric longboard}{Longtime personal project}{}{}{%
 C, C++, Java, Android, ESP32, ESP-IDF, Arduino\medskip\newline{}
-Electric motor driven board powered with batteries and controlled wirelessly.
+Electric motor driven board powered with batteries and wireless controller.
 Core of the project are microcontrollers programmed in C/C++ using ESP-IDF framework and Arduino libraries. 
 Controllable with custom controller or phone Android application written in Java with more advanced options.
 Project development has started at high school, continued during university studies and is still ongoing.
 \medskip}
-\cventry{2020}{Script for project testing}{Personal project}{}{}{
-Bash, Make, Valgrid\medskip\newline{}
+\cventry{2020}{Script for project testing}{Personal project}{}{}{%
+Bash, Make, Valgrind\medskip\newline{}
 Bash script to run automated project testing.
 Script consists of operations for program build, memory check for leaks and invalid memory operations, program output comparison with reference. 
 Testing can focus on selected parts based on user requirements.
@@ -109,7 +109,7 @@ Made for university projects written in C/C++.}
 \cvitemwithcomment{Spanish}{A1}{Learning in free time.}
 
 
-\section[\faTools]{Techstack}
+\section[\faTools]{Tech stack}
 \cvskilllegend*[1em]{}
 \cvskillhead[-0.1em]
 
